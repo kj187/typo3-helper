@@ -1,0 +1,26 @@
+{
+    "name": "aijko/typo3-helper",
+    "description" : "aijko typo3 helper",
+
+    "config": {
+        "vendor-dir": "Vendor",
+        "bin-dir": "bin"
+    },
+
+    "require": {
+        "aura/cli": "dev-master",
+        "knplabs/gaufrette": "dev-master"
+    },
+
+    "require-dev": {
+
+    },
+
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-0": {
+            "Aijko\\Typo3Helper": "Application/"
+        }
+    }
+}

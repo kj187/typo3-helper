@@ -1,0 +1,19 @@
+#! /usr/bin/env php
+<?php
+
+/*                                                                        *
+ * This script belongs to the  aijko project autoinstaller app            *
+ * Copyright (c) 2013 aijko GmbH (http://www.aijko.de)                    *
+ *                                                                        */
+
+if (php_sapi_name() != 'cli') {
+	die('Must run from command line');
+}
+
+define('ROOT', __DIR__ . '/');
+require __DIR__ . '/Application/Aijko/Typo3Helper/Core/Bootstrap.php';
+$bootstrap = new \Aijko\Typo3Helper\Core\Bootstrap();
+$bootstrap->initialize();
+$bootstrap->runTasks();
+
+?>
